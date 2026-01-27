@@ -1,0 +1,10 @@
+{
+  "name": "newpowerful-choir-website",
+  "version": "1.0.0",
+  "description": "Website for Newpowerful Art Organisation",
+  "scripts": {
+    "start": "npx -y serve ."
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newpowerful Art Organisation | Elevating Voices</title>
+    <meta name="description"
+        content="Newpowerful Art Organisation: A premier choir ensemble delivering soul-stirring performances and artistic excellence. Join us on a journey of harmony.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="logo">Newpowerful</div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="performances.html">Performances</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#join">Join Us</a></li>
+                <li><a href="contact.html" class="cta-button">Book Now</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="fade-in-up">Harmony in Motion</h1>
+                <p class="fade-in-up delay-1">Experience the soul-stirring power of the Newpowerful Art Organisation.
+                </p>
+                <div class="hero-buttons fade-in-up delay-2">
+                    <a href="#performances" class="btn btn-primary">Watch Performances</a>
+                    <a href="#join" class="btn btn-secondary">Audition Now</a>
+                </div>
+            </div>
+            <!-- Scroll indicator -->
+            <div class="scroll-indicator">
+                <span></span>
+            </div>
+        </section>
+
+
+
+        <!-- Performances Section Removed - Moved to performances.html -->
+
+        <section id="join" class="glass-section">
+            <div class="container text-center">
+                <h2>Join The Movement</h2>
+                <p>Become a part of our premier ensemble. Fill out the details below.</p>
+
+                <form class="contact-form glass-card detailed-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="surname">Surname</label>
+                            <input type="text" id="surname" placeholder="Surname" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact">Contact Number</label>
+                            <input type="tel" id="contact" placeholder="+1 234 567 8900" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" placeholder="City, Area" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label>Gender</label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="gender" value="Male"> Male</label>
+                                <label class="radio-label"><input type="radio" name="gender" value="Female">
+                                    Female</label>
+                            </div>
+                        </div>
+                        <div class="form-group half">
+                            <label for="voice-part">Voice Part</label>
+                            <select id="voice-part" required>
+                                <option value="" disabled selected>Select Voice</option>
+                                <option value="Soprano">Soprano</option>
+                                <option value="Alto">Alto</option>
+                                <option value="Tenor">Tenor</option>
+                                <option value="Bass">Bass</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary full-width">Submit Application</button>
+                    <!-- "Schedule an Audition" button removed as form replaces it -->
+                </form>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <form class="contact-form glass-card">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Tell us about your event or audition inquiry..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">Newpowerful</div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61574830334225" target="_blank" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                </a>
+                <a href="https://tiktok.com/@n.p.aorg" target="_blank" aria-label="TikTok">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93v6.16c0 3.13-2.44 5.65-5.54 5.65-3.09 0-5.6-2.5-5.6-5.6 0-3.09 2.5-5.61 5.59-5.61.32 0 .65.03.96.09v3.94c-.16-.04-.33-.07-.5-.07-1.07 0-1.91.85-1.91 1.93 0 1.07.85 1.93 1.91 1.93 1.07 0 1.91-.85 1.91-1.93V6.35c0-.73.12-1.44.33-2.12.02-.06.03-.12.05-.18V.02z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Newpowerful Art Organisation. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
