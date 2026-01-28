@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Us | Newpowerful Art Organisation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="main-header" style="background-color: var(--deep-navy);">
+        <div class="logo">Newpowerful</div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="performances.html">Performances</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="index.html#join">Join Us</a></li>
+                <li><a href="booking.html" class="cta-button active">Book Now</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="glass-section booking-page-section" style="padding-top: 8rem; min-height: 100vh;">
+            <div class="container">
+                <h1 class="section-title">Book Us For Your Event</h1>
+                <p
+                    style="text-align: center; max-width: 800px; margin: 0 auto 3rem; font-size: 1.1rem; color: #e0e0e0;">
+                    This is a realistic choir booking form suitable for churches, events, weddings, funerals, or
+                    corporate bookings.
+                </p>
+
+                <div class="glass-card" style="max-width: 800px; margin: 0 auto;">
+                    <form class="booking-form detailed-form">
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" id="fullName" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group half">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="Enter phone number" required>
+                            </div>
+                            <div class="form-group half">
+                                <label for="eventType">Event Type</label>
+                                <select id="eventType" required>
+                                    <option value="" disabled selected>Select event type</option>
+                                    <option value="Church Service">Church Service</option>
+                                    <option value="Wedding">Wedding</option>
+                                    <option value="Funeral">Funeral</option>
+                                    <option value="Corporate Event">Corporate Event</option>
+                                    <option value="Concert">Concert</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="eventDate">Event Date</label>
+                                <input type="date" id="eventDate" required>
+                            </div>
+                            <div class="form-group half">
+                                <label for="eventLocation">Event Location</label>
+                                <input type="text" id="eventLocation" placeholder="Specific address or venue" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="numSongs">Number of Songs Required</label>
+                            <input type="number" id="numSongs" placeholder="e.g. 3" min="1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Additional Notes</label>
+                            <textarea id="notes" rows="4"
+                                placeholder="Tell us more about the event requirements..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary full-width">Submit Booking Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">Newpowerful</div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61574830334225" target="_blank" aria-label="Facebook">
+                    <!-- Facebook SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                </a>
+                <a href="https://tiktok.com/@n.p.aorg" target="_blank" aria-label="TikTok">
+                    <!-- TikTok SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93v6.16c0 3.13-2.44 5.65-5.54 5.65-3.09 0-5.6-2.5-5.6-5.6 0-3.09 2.5-5.61 5.59-5.61.32 0 .65.03.96.09v3.94c-.16-.04-.33-.07-.5-.07-1.07 0-1.91.85-1.91 1.93 0 1.07.85 1.93 1.91 1.93 1.07 0 1.91-.85 1.91-1.93V6.35c0-.73.12-1.44.33-2.12.02-.06.03-.12.05-.18V.02z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Newpowerful Art Organisation. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
