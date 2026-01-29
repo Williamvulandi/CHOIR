@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     mobileMenuBtn.addEventListener('click', () => {
         navLinks.classList.toggle('active');
-        
+
         // Optional: Animate hamburger into 'X'
         const bars = mobileMenuBtn.querySelectorAll('.bar');
         // Simple scale effect for click feedback
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Header Scroll Effect
     const header = document.getElementById('main-header');
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             header.classList.add('scrolled');
@@ -28,13 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            
+
             // Close mobile menu if open
             navLinks.classList.remove('active');
 
             const targetId = this.getAttribute('href');
-            if(targetId === '#') return;
-            
+            if (targetId === '#') return;
+
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 targetElement.scrollIntoView({
@@ -63,11 +63,39 @@ document.addEventListener('DOMContentLoaded', () => {
     // Apply fade-in animation to sections logic manually if classes aren't pre-set
     // Or we can dynamically add classes to elements we want to animate
     const animateElements = document.querySelectorAll('.gallery-item, .features-list li, .glass-card, .section-title');
-    
+
     animateElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
         el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
         fadeInOnScroll.observe(el);
+    });
+
+    // Events Modal Functionality
+    const eventsModal = document.getElementById('events-modal');
+    const nextEventsBtn = document.getElementById('next-events-btn');
+    const closeModal = document.querySelector('.close-modal');
+
+    if (nextEventsBtn) {
+        nextEventsBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            eventsModal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent background scroll
+        });
+    }
+
+    if (closeModal) {
+        closeModal.addEventListener('click', () => {
+            eventsModal.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scroll
+        });
+    }
+
+    // Close modal when clicking outside
+    window.addEventListener('click', (e) => {
+        if (e.target === eventsModal) {
+            eventsModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
     });
 });

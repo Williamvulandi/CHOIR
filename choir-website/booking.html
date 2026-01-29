@@ -44,26 +44,28 @@
                 </p>
 
                 <div class="glass-card" style="max-width: 800px; margin: 0 auto;">
-                    <form class="booking-form detailed-form">
+                    <form class="booking-form detailed-form" action="https://formspree.io/f/mwvblogv" method="POST">
+                        <input type="hidden" name="_subject" value="New Booking Request">
                         <div class="form-row">
                             <div class="form-group half">
                                 <label for="fullName">Full Name</label>
-                                <input type="text" id="fullName" placeholder="Enter your full name" required>
+                                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name"
+                                    required>
                             </div>
                             <div class="form-group half">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" placeholder="Enter your email" required>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group half">
                                 <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" placeholder="Enter phone number" required>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
                             </div>
                             <div class="form-group half">
                                 <label for="eventType">Event Type</label>
-                                <select id="eventType" required>
+                                <select id="eventType" name="eventType" required>
                                     <option value="" disabled selected>Select event type</option>
                                     <option value="Church Service">Church Service</option>
                                     <option value="Wedding">Wedding</option>
@@ -78,22 +80,23 @@
                         <div class="form-row">
                             <div class="form-group half">
                                 <label for="eventDate">Event Date</label>
-                                <input type="date" id="eventDate" required>
+                                <input type="date" id="eventDate" name="eventDate" required>
                             </div>
                             <div class="form-group half">
                                 <label for="eventLocation">Event Location</label>
-                                <input type="text" id="eventLocation" placeholder="Specific address or venue" required>
+                                <input type="text" id="eventLocation" name="eventLocation"
+                                    placeholder="Specific address or venue" required>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="numSongs">Number of Songs Required</label>
-                            <input type="number" id="numSongs" placeholder="e.g. 3" min="1">
+                            <input type="number" id="numSongs" name="numSongs" placeholder="e.g. 3" min="1">
                         </div>
 
                         <div class="form-group">
                             <label for="notes">Additional Notes</label>
-                            <textarea id="notes" rows="4"
+                            <textarea id="notes" name="notes" rows="4"
                                 placeholder="Tell us more about the event requirements..."></textarea>
                         </div>
 

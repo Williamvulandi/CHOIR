@@ -40,11 +40,13 @@
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1 class="fade-in-up">Harmony in Motion</h1>
-                <p class="fade-in-up delay-1">Experience the soul-stirring power of the Newpowerful Art Organisation.
+                <p class="fade-in-up delay-1">NEW POWERFUL ART ORGANIZATION is a vibrant community of artists and music
+                    lovers united by our passion for creative expression , Singing with joy , Sharing with Love ,
+                    uplifting all and celebrating the POWER of music .
                 </p>
                 <div class="hero-buttons fade-in-up delay-2">
-                    <a href="#performances" class="btn btn-primary">Watch Performances</a>
-                    <a href="#join" class="btn btn-secondary">Audition Now</a>
+                    <a href="performances.html" class="btn btn-primary">Watch Performances</a>
+                    <a href="#" id="next-events-btn" class="btn btn-secondary">Next Events</a>
                 </div>
             </div>
             <!-- Scroll indicator -->
@@ -62,26 +64,35 @@
                 <h2>Join The Movement</h2>
                 <p>Become a part of our premier ensemble. Fill out the details below.</p>
 
-                <form class="contact-form glass-card detailed-form">
+                <form class="contact-form glass-card detailed-form" action="https://formspree.io/f/xjgrywno"
+                    method="POST">
+                    <input type="hidden" name="_subject" value="New Choir Membership Application">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" placeholder="Name" required>
+                            <input type="text" id="name" name="name" placeholder="Name" required>
                         </div>
                         <div class="form-group">
                             <label for="surname">Surname</label>
-                            <input type="text" id="surname" placeholder="Surname" required>
+                            <input type="text" id="surname" name="surname" placeholder="Surname" required>
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="contact">Contact Number</label>
-                            <input type="tel" id="contact" placeholder="+1 234 567 8900" required>
+                            <label for="join-email">Email</label>
+                            <input type="email" id="join-email" name="email" placeholder="your@email.com" required>
                         </div>
                         <div class="form-group">
+                            <label for="contact">Contact Number</label>
+                            <input type="tel" id="contact" name="contact" placeholder="+1 234 567 8900" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
                             <label for="address">Address</label>
-                            <input type="text" id="address" placeholder="City, Area" required>
+                            <input type="text" id="address" name="address" placeholder="City, Area" required>
                         </div>
                     </div>
 
@@ -96,7 +107,7 @@
                         </div>
                         <div class="form-group half">
                             <label for="voice-part">Voice Part</label>
-                            <select id="voice-part" required>
+                            <select id="voice-part" name="voicePart" required>
                                 <option value="" disabled selected>Select Voice</option>
                                 <option value="Soprano">Soprano</option>
                                 <option value="Alto">Alto</option>
@@ -134,6 +145,25 @@
             </div>
         </section>
     </main>
+
+    <!-- Events Modal -->
+    <div id="events-modal" class="events-modal">
+        <div class="events-modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h2 class="section-title" style="text-align: center; position: static; transform: none;">Upcoming Events
+            </h2>
+
+            <div id="events-list" class="events-list">
+                <!-- Events will be dynamically inserted here -->
+                <!-- Default: No events message -->
+                <div class="no-events-message">
+                    <p style="text-align: center; font-size: 1.2rem; color: #ccc; padding: 2rem;">
+                        📅 No upcoming events at the moment. Check back soon!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="container footer-content">
